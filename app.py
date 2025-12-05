@@ -179,11 +179,12 @@ if input_data is not None:
             pred = preds[0]
         else:
             pred = preds
-        st.success(f"Predicted price: ₹{pred}")
+        st.success(f"Predicted price: ₹{round(pred)}")
     except Exception as e:
         st.error("Prediction failed: " + str(e))
 
 st.markdown('---')
 st.caption("This Streamlit app was auto-generated. You can edit /mnt/data/streamlit_app.py to customize the UI.")
+
 
 
